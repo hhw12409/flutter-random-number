@@ -85,15 +85,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   onPressed: () {
                     final rand = Random();
-                    final List<int> newNumbers = [];
+                    final Set<int> newNumbers = {};
 
-                    for (int i = 0; i < 3; i++) {
+                    while (newNumbers.length != 3) {
                       final number = rand.nextInt(1000);
                       newNumbers.add(number);
                     }
 
                     setState(() {
-                      randomNunmbers = newNumbers;
+                      randomNunmbers = newNumbers.toList();
                     });
                   },
                   child: const Text(
