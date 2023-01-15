@@ -3,7 +3,10 @@ import 'package:flutter_random_number/constants/color.dart';
 import 'package:flutter_random_number/screens/settings.dart';
 
 class Header extends StatelessWidget {
+  final VoidCallback onPressed;
+
   const Header({
+    required this.onPressed,
     Key? key,
   }) : super(key: key);
 
