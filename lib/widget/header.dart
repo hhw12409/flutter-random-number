@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_random_number/constants/color.dart';
+import 'package:flutter_random_number/screens/settings.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -20,7 +21,15 @@ class Header extends StatelessWidget {
           ),
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) {
+                  return const SettingsScreen();
+                },
+              ),
+            );
+          },
           icon: const Icon(
             Icons.settings,
             color: RED_COLOR,
