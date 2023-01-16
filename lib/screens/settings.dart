@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_random_number/constants/color.dart';
-import 'package:flutter_random_number/widget/number_row.dart';
+import 'package:flutter_random_number/components/number_row.dart';
 
 class SettingsScreen extends StatefulWidget {
   final int maxNumber;

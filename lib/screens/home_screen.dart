@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_random_number/constants/color.dart';
 import 'package:flutter_random_number/screens/settings.dart';
-import 'package:flutter_random_number/widget/body.dart';
-import 'package:flutter_random_number/widget/footer.dart';
+import 'package:flutter_random_number/components/body.dart';
+import 'package:flutter_random_number/components/footer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

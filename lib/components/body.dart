@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_random_number/components/number_row.dart';
 
 class Body extends StatelessWidget {
   final List<int> randomNunmbers;
@@ -18,23 +19,12 @@ class Body extends StatelessWidget {
             .entries
             .map(
               (x) => Padding(
-                padding: EdgeInsets.only(
-                  bottom: x.key == 2 ? 0 : 16,
-                ),
-                child: Row(
-                  children: x.value
-                      .toString()
-                      .split('')
-                      .map(
-                        (e) => Image.asset(
-                          'asset/img/$e.png',
-                          height: 70,
-                          width: 50,
-                        ),
-                      )
-                      .toList(),
-                ),
-              ),
+                  padding: EdgeInsets.only(
+                    bottom: x.key == 2 ? 0 : 16,
+                  ),
+                  child: NumberRow(
+                    number: x.value,
+                  )),
             )
             .toList(),
       ),
